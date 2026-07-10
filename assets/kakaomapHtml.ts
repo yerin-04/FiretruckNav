@@ -11,7 +11,6 @@ export const kakaomapHtml = `
 </head>
 <body>
   <div id="map"></div>
-  <h1 style="color:red;">테스트 화면입니다</h1>
   <script type="text/javascript"
     src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=c164544cf95f1e116f294084dee919c6&libraries=services"></script>
   <script>
@@ -34,11 +33,31 @@ export const kakaomapHtml = `
       map.setBounds(dongdaemunBounds);
     }, 0);
 
-    // 테스트용 마커 하나
-    var marker = new kakao.maps.Marker({
-      position: new kakao.maps.LatLng(37.574607, 127.039585)
-    });
-    marker.setMap(map);
+    // 화재차 실시간 위치 마커
+    var truckMarkerImage = new kakao.maps.MarkerImage(
+      'data:image/svg+xml;base64,' + btoa(
+        '<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36">' +
+        '<circle cx="18" cy="18" r="16" fill="#e02020" stroke="#ffffff" stroke-width="3"/>' +
+        '</svg>'
+      ),
+      new kakao.maps.Size(36, 36)
+    );
+    var truckMarker = null;
+
+    // React Native 쪽에서 injectJavaScript로 호출하는 함수.
+    // 마커가 없으면 생성하고, 있으면 위치만 갱신한다.
+    window.updateTruckPosition = function (lat, lng) {
+      var position = new kakao.maps.LatLng(lat, lng);
+      if (!truckMarker) {
+        truckMarker = new kakao.maps.Marker({
+          position: position,
+          image: truckMarkerImage
+        });
+        truckMarker.setMap(map);
+      } else {
+        truckMarker.setPosition(position);
+      }
+    };
   </script>
 </body>
 </html>
