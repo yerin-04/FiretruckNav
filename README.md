@@ -1,3 +1,29 @@
+# FiretruckNav (동대문구 소방차 내비게이션)
+
+제6회 소방안전 빅데이터 활용 및 아이디어 경진대회 출품작
+
+## 카카오맵 API 연동 정보
+
+- JavaScript 키: 팀 노션 별도 공유
+- 등록 도메인: http://localhost
+- SDK 주소: https://dapi.kakao.com/v2/maps/sdk.js?appkey={키}&libraries=services
+
+## 동대문구 좌표
+
+- 중심 좌표: 위도 37.574607, 경도 127.039585
+- 경계 범위 (LatLngBounds):
+  - 남서쪽: 위도 37.560, 경도 127.020
+  - 북동쪽: 위도 37.607, 경도 127.067
+
+## 참고사항
+
+- 위 좌표 범위로 앱 초기 화면이 동대문구에 맞춰 자동 세팅됨
+- 마커 추가 시 위도(lat), 경도(lng) 형태로 좌표 필요
+- 데이터가 주소 형태면 지오코딩(주소→좌표 변환) 필요
+
+---
+
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
