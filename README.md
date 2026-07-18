@@ -2,11 +2,13 @@
 
 제6회 소방안전 빅데이터 활용 및 아이디어 경진대회 출품작
 
+
 ## 카카오맵 API 연동 정보
 
 - JavaScript 키: 팀 노션 별도 공유
 - 등록 도메인: http://localhost
 - SDK 주소: https://dapi.kakao.com/v2/maps/sdk.js?appkey={키}&libraries=services
+
 
 ## 동대문구 좌표
 
@@ -14,6 +16,7 @@
 - 경계 범위 (LatLngBounds):
   - 남서쪽: 위도 37.560, 경도 127.020
   - 북동쪽: 위도 37.607, 경도 127.067
+ 
 
 ## 참고사항
 
