@@ -23,3 +23,13 @@
 - 위 좌표 범위로 앱 초기 화면이 동대문구에 맞춰 자동 세팅됨
 - 마커 추가 시 위도(lat), 경도(lng) 형태로 좌표 필요
 - 데이터가 주소 형태면 지오코딩(주소→좌표 변환) 필요
+
+<table>
+  <tbody>
+    <tr>
+      <td align="center"><a href=""><img src="width="100px;" alt=""/><br /><sub><b> 류은효 : </b></sub></a><br /></td>
+      <td align="center"><a href=""><img src="" width="100px;" alt=""/><br /><sub><b> 유예린 : </b></sub></a><br /></td>
+      <td align="center"><a href=""><img src="" width="100px;" alt=""/><br /><sub><b> 이지형 : </b></sub></a><br /></td>
+    </tr>
+  </tbody>
+</table>
