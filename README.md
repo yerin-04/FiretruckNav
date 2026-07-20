@@ -34,13 +34,13 @@
     <th>이지형</th>
   </tr>
   <tr>
-    <td><img src="assets/헬로키티.png" width="150" height="150"/></td>
-    <td><img src="assets/포차코.png" width="150" height="150"/></td>
-    <td><img src="assets/치즈말랑이.jpeg" width="150" height="150"/></td>
+    <td><img src="assets/헬로키티.png" width="170" height="170"/></td>
+    <td><img src="assets/포차코.png" width="170" height="170"/></td>
+    <td><img src="assets/치즈말랑이.jpeg" width="170" height="170"/></td>
   </tr>
   <tr>
+    <td><a href="https://github.com/eh040117-cell">@eh040117-cell</a></td>
     <td><a href="https://github.com/yerin-04">@yerin-04</a></td>
-    <td><a href="https://github.com/아이디2">@아이디2</a></td>
-    <td><a href="https://github.com/아이디3">@아이디3</a></td>
+    <td><a href="https://github.com/shannah241029">@shannah241029</a></td>
   </tr>
 </table>
